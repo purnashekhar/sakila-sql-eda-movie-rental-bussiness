@@ -94,11 +94,11 @@ The analysis includes **data cleaning, preprocessing, SQL-based exploration, and
 
 --- 
 ## 👨‍💻 Author
-**Your Name**  
+**Bandi Purna Shekhar**  
 SQL Analyst | Data Analyst | Business Intelligence  
-📧 your.email@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
-🔗 [GitHub](https://github.com/yourusername)  
+📧 purnashekhar2352@gmail.com
+🔗 www.linkedin.com/in/bandi-purnashekhar 
+🔗 [GitHub](https://github.com/purnashekhar)  
 
 ---
 
