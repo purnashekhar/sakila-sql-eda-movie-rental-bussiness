@@ -85,7 +85,14 @@ The analysis includes **data cleaning, preprocessing, SQL-based exploration, and
 4. Export results (optional) to `results/` folder for reporting.  
 
 ---
+## 📝 NOTE
+- All analysis is performed **entirely using SQL**. No external data processing tools were used.  
+- Ensure the **Sakila database** is fully loaded with all tables and constraints before running queries.  
+- Some queries (like inventory in/out stock) assume **custom SQL functions** such as `inventory_in_stock()` exist; adjust based on your environment.  
+- CSV exports in `results/` are optional and for demonstration purposes; query outputs can be viewed directly in MySQL Workbench.  
+- Dates are formatted using `DATE_FORMAT` for readability; adjust according to your MySQL version.
 
+--- 
 ## 👨‍💻 Author
 **Your Name**  
 SQL Analyst | Data Analyst | Business Intelligence  
