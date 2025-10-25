@@ -77,6 +77,29 @@ The analysis includes **data cleaning, preprocessing, SQL-based exploration, and
 - 🌍 **Geographic Trends:** City and country revenue contribution measured  
 
 ---
+## 📊 Key Insights
+
+- **Store Revenue:** Store 1 consistently generates higher revenue; peak months are July–August 2005.  
+- **Movie Categories & Ratings:** Top revenue categories are Sports, Sci-Fi, Animation, Drama; PG-13 and NC-17 films lead in revenue.  
+- **Top Customers:** Top 10 customers contribute a significant portion of revenue, indicating loyal, high-value users.  
+- **Rental Duration & Late Returns:** Average rental duration ~5 days; 8,121 rentals returned late.  
+- **Staff Performance:** Staff Mike and Jon processed the most payments and revenue.  
+- **Geographic Revenue:** Highest revenue comes from US cities; other key markets exist across Europe, Asia, and South America.  
+- **Inventory Availability:** Most films in stock (2,178), small portion out-of-stock (92).
+
+## 💡 Recommendations
+
+- Focus promotions on high-revenue stores and peak months.  
+- Promote top-performing categories and popular movie ratings.  
+- Launch loyalty programs for top customers.  
+- Reduce late returns via reminders or incentives.  
+- Ensure popular films remain in stock; adjust inventory seasonally.  
+- Optimize staff workflow based on performance metrics.  
+
+## 🏁 Conclusion
+
+SQL-based EDA reveals **store performance, customer behavior, movie popularity, and inventory trends**. Insights help drive **revenue growth, operational efficiency, and customer satisfaction**.
+---
 
 ## 🛠️ How to Run the Project
 1. Clone the repository.  
