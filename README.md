@@ -1,128 +1,160 @@
-# 📊 Sakila SQL EDA Project (MySQL | SQL | Data Analysis)
 
-## 🧭 Project Overview
-This project presents an **end-to-end Exploratory Data Analysis (EDA)** on the **Sakila Movie Rental Database** using **SQL (MySQL)**.  
-The analysis includes **data cleaning, preprocessing, SQL-based exploration, and actionable business insights** for **store performance, revenue trends, customer behavior, and inventory management**.
+# 📽️ **Sakila Movie Rental – SQL + Python + Power BI Project (In Progress)**
 
----
-
-## 🎯 Project Objectives
-- Analyze **store revenue trends** over time  
-- Identify **top customers and profitable movie categories**  
-- Evaluate **staff performance and late rental patterns**  
-- Monitor **inventory availability** per store  
+### *(MySQL | SQL | Python | Pandas | Seaborn | Power BI | EDA)*
 
 ---
 
-## 👥 Stakeholders & Key Questions
+## 🚧 **Project Status: IN PROGRESS**
 
-### **Stakeholders**
-- **Business Manager / CEO** – Store revenue and top customers  
-- **Sales & Marketing Team** – Profitable movie categories, high-value customers  
-- **Inventory / Operations Team** – Late returns and stock availability  
-- **Data Analyst / BI Team** – Data quality and actionable insights  
+This project is currently **under development**.
+SQL analysis, Python EDA, and Power BI visualization are being built step-by-step.
 
-### **Key Questions**
-| Stakeholder | Key Questions |
-|------------|---------------|
-| **Business Manager / CEO** | Which stores generate the highest revenue? How do revenues vary over time? |
-| **Sales & Marketing Team** | Which movie categories and ratings generate the most revenue? Who are the top customers? |
-| **Inventory / Operations Team** | How many rentals are late? Which films are in/out of stock per store? |
-| **Data Analyst / BI Team** | How clean and reliable is the data? What insights can SQL EDA provide? |
+More updates will be added as the project progresses.
 
 ---
 
-## 🧮 Dataset Information
-| Table | Description |
-|-------|-------------|
-| **payment** | Payment transactions with amount and date |
-| **rental** | Rental transactions with rental start/end dates |
-| **customer** | Customer information |
-| **staff** | Staff handling payments and rentals |
-| **store** | Store information |
-| **inventory** | Stock and film information |
-| **film & category** | Film details and categories |
+## 🧭 **Project Overview**
 
-📁 **Rows/Columns:** Varies per table  
-📚 **Source:** MySQL Sakila Sample Database  
+This project performs an end-to-end analysis of the **Sakila Movie Rental Database** using:
+
+* **SQL** (data extraction + initial EDA)
+* **Python** (data cleaning + deeper EDA)
+* **Power BI** (dashboard visualization)
+
+The goal is to analyze **store revenue**, **movie category demand**, **customer behavior**, **late rentals**, **staff performance**, and **inventory availability**.
 
 ---
 
-## ⚙️ Tools & Technologies Used
-- **MySQL / MySQL Workbench** – Database and SQL queries  
-- **SQL** – Joins, aggregations, date functions, subqueries  
-- **CSV / Excel** – Optional export of query results for reporting  
+## 🎯 **Project Objectives**
+
+* Analyze store revenue trends over time
+* Identify top customers and profitable movie categories
+* Evaluate staff performance
+* Understand rental duration and late return patterns
+* Explore inventory availability per store
+* Build a combined SQL + Python + Power BI analytics workflow
 
 ---
 
-## 🧩 SQL EDA Steps & Queries
-| Step | Query File | Purpose |
-|------|------------|---------|
-| **1** | `01_store_revenue.sql` | Store revenue analysis and seasonal trends |
-| **2** | `02_movie_category_rating.sql` | Revenue by movie category and rating |
-| **3** | `03_top_customers.sql` | Top 10 customers by total payments |
-| **4** | `04_rental_analysis.sql` | Average rental duration and late returns |
-| **5** | `05_staff_performance.sql` | Staff performance and payments processed |
-| **6** | `06_geographic_revenue.sql` | Revenue by city and country |
-| **7** | `07_inventory_status.sql` | Inventory in-stock vs out-of-stock per store |
+## 👥 **Stakeholders & Key Questions**
+
+### Stakeholders
+
+* **CEO / Business Manager** – revenue, growth, store performance
+* **Marketing Team** – movie category demand, customer segments
+* **Inventory / Operations** – late returns, stock levels
+* **Data Team** – data reliability + KPI generation
+
+### Key Questions
+
+* Which stores generate the highest revenue?
+* What film categories generate the most revenue?
+* Who are the top 10 customers?
+* Which movies are rented frequently or returned late?
+* How efficient are staff members in processing rentals?
+* How many movies are in stock vs out of stock?
+* How can SQL, Python, and BI together improve insights?
 
 ---
 
-## 📈 Key Insights & Findings
-- 💰 **Revenue Analysis:** Top-performing stores identified with seasonal revenue patterns  
-- 🎬 **Movie Categories:** Certain categories and ratings generate most revenue  
-- 👥 **Customer Behavior:** Top 10 customers contribute most revenue  
-- 🕒 **Rental Analysis:** Average rental duration and late returns monitored  
-- 🏢 **Staff & Inventory:** Staff efficiency and stock availability per store analyzed  
-- 🌍 **Geographic Trends:** City and country revenue contribution measured  
+## 🧮 **Dataset Information**
 
----
-## 📊 Key Insights
+Sakila database includes:
 
-- **Store Revenue:** Store 1 consistently generates higher revenue; peak months are July–August 2005.  
-- **Movie Categories & Ratings:** Top revenue categories are Sports, Sci-Fi, Animation, Drama; PG-13 and NC-17 films lead in revenue.  
-- **Top Customers:** Top 10 customers contribute a significant portion of revenue, indicating loyal, high-value users.  
-- **Rental Duration & Late Returns:** Average rental duration ~5 days; 8,121 rentals returned late.  
-- **Staff Performance:** Staff Mike and Jon processed the most payments and revenue.  
-- **Geographic Revenue:** Highest revenue comes from US cities; other key markets exist across Europe, Asia, and South America.  
-- **Inventory Availability:** Most films in stock (2,178), small portion out-of-stock (92).
+| Table     | Description                     |
+| --------- | ------------------------------- |
+| payment   | Customer payments               |
+| rental    | Rental start, end, return dates |
+| customer  | Customer details                |
+| inventory | Film stock per store            |
+| store     | Store locations                 |
+| staff     | Staff information               |
+| film      | Movie details                   |
+| category  | Movie genres                    |
 
-## 💡 Recommendations
-
-- Focus promotions on high-revenue stores and peak months.  
-- Promote top-performing categories and popular movie ratings.  
-- Launch loyalty programs for top customers.  
-- Reduce late returns via reminders or incentives.  
-- Ensure popular films remain in stock; adjust inventory seasonally.  
-- Optimize staff workflow based on performance metrics.  
-
-## 🏁 Conclusion
-
-SQL-based EDA reveals **store performance, customer behavior, movie popularity, and inventory trends**. Insights help drive **revenue growth, operational efficiency, and customer satisfaction**.
----
-
-## 🛠️ How to Run the Project
-1. Clone the repository.  
-2. Load the **Sakila database** into MySQL.  
-3. Run SQL scripts from `sql_queries/` in order.  
-4. Export results (optional) to `results/` folder for reporting.  
-
----
-## 📝 NOTE
-- All analysis is performed **entirely using SQL**. No external data processing tools were used.  
-- Ensure the **Sakila database** is fully loaded with all tables and constraints before running queries.  
-- Some queries (like inventory in/out stock) assume **custom SQL functions** such as `inventory_in_stock()` exist; adjust based on your environment.  
-- CSV exports in `results/` are optional and for demonstration purposes; query outputs can be viewed directly in MySQL Workbench.  
-- Dates are formatted using `DATE_FORMAT` for readability; adjust according to your MySQL version.
-
---- 
-## 👨‍💻 Author
-**Bandi Purna Shekhar**  
-SQL Analyst | Data Analyst | Business Intelligence  
-📧 purnashekhar2352@gmail.com
-🔗 www.linkedin.com/in/bandi-purnashekhar 
-🔗 [GitHub](https://github.com/purnashekhar)  
+📚 **Source:** MySQL Sakila Sample Database
+📁 Additional tables to be explored as project grows
 
 ---
 
-⭐ **If you find this project useful, don’t forget to give it a star!** ⭐
+# ⚙️ **Tools & Technologies Used**
+
+### Backend / SQL
+
+* MySQL
+* MySQL Workbench
+
+### Python EDA
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+
+### BI Tool
+
+* Power BI
+
+---
+
+# 🧩 **Project Workflow (Current Progress)**
+
+### ✅ **Phase 1 — SQL Extraction & Initial Analysis (Started)**
+
+* [x] Connected to Sakila DB
+* [x] Basic SELECT queries
+* [x] Joins between payment, rental, customer, store
+* [ ] Revenue by store
+* [ ] Revenue by movie category
+* [ ] Late return analysis
+* [ ] Customer-level revenue
+
+### 🚧 **Phase 2 — Python EDA (In Progress)**
+
+* [x] Export SQL query results to CSV
+* [ ] Load into Pandas DataFrames
+* [ ] Data cleaning & preprocessing
+* [ ] EDA visualizations (heatmaps, histograms, barplots)
+* [ ] Feature engineering (rental duration, late return flag, etc.)
+
+### 🟡 **Phase 3 — Power BI Dashboard (Not Started Yet)**
+
+Planned visuals:
+
+* Total Revenue
+* Revenue by Store
+* Top 10 Customers
+* Movie Category Revenue
+* Late Returns Overview
+* Staff Performance
+* City & Country Revenue
+
+---
+
+# 📈 **Planned Final Insights (To Be Generated)**
+
+*(Will be updated as analysis progresses)*
+
+* Store 1 vs Store 2 revenue comparison
+* Peak revenue months
+* Most profitable categories (e.g., Sports, Sci-Fi, Family, etc.)
+* Top 10 high-value customers
+* Number of late returns
+* Staff performance rankings
+* Inventory in-stock vs out-of-stock
+
+---
+
+# 🧠 **Future Recommendations (Will Update After Completing Analysis)**
+
+Expected recommendations will include:
+
+* Marketing focus on high-demand movie categories
+* Customer retention strategies for top renters
+* Improving on-time return rates
+* Optimizing inventory for high-demand films
+* Staff scheduling based on demand patterns
+
+---
+
